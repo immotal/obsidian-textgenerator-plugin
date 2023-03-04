@@ -35,7 +35,7 @@ export default class ReqFormatter {
      };
 
     
-    //    let reqUrl= `https://api.openai.com/v1/engines/${params.engine}/completions`;
+       let reqUrl= `https://api.openai.com/v1/engines/${params.engine}/completions`;
        let reqUrl= `${this.plugin.settings.base_url}/v1/engines/${params.engine}/completions`;
        let reqExtractResult = "requestResults?.choices[0].text";
 
@@ -47,8 +47,7 @@ export default class ReqFormatter {
             "temperature": params.temperature,
             "frequency_penalty": params.frequency_penalty,
         };
-        reqUrl = `${this.plugin.settings.base_url}/v1/chat/completions`;
-        // reqUrl = "https://api.openai.com/v1/chat/completions";
+        reqUrl = "https://api.openai.com/v1/chat/completions";
         reqExtractResult = "requestResults?.choices[0].message.content";
        } 
       

@@ -10,7 +10,7 @@ type Context= {
 
 type TextGeneratorSettings= {
 	api_key: string;
-  base_url: string;
+  
 	engine: string;
 	max_tokens: number;
 	temperature: number;

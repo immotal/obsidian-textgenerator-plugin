@@ -48,7 +48,7 @@ export default class ReqFormatter {
             "frequency_penalty": params.frequency_penalty,
         };
         reqUrl = `${this.plugin.settings.base_url}/v1/chat/completions`;
-        // reqUrl = "https://api.openai.com/v1/chat/completions";
+        reqUrl = "https://api.openai.com/v1/chat/completions";
         reqExtractResult = "requestResults?.choices[0].message.content";
        } 
       

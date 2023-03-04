@@ -100,7 +100,7 @@ export default class TextGeneratorSettingTab extends PluginSettingTab {
 		  if(this.plugin.settings.api_key.length > 0) {
 			let reqParams = {
 				url: `${this.plugin.settings.base_url}/v1/models`,
-				// url: `https://api.openai.com/v1/models`,
+				url: `https://api.openai.com/v1/models`,
 				method: 'GET',
 				body:'',
 				headers: {
